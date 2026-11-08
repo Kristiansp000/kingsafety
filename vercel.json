@@ -4,5 +4,8 @@
     "api/index.js": {
       "includeFiles": "{index.html,asset/**}"
     }
-  }
+  },
+  "rewrites": [
+    { "source": "/asset/:path*", "destination": "/api/index" }
+  ]
 }
